@@ -42,7 +42,8 @@
             android:name=".Artifacts"
             android:label="@string/title_activity_artifacts"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Quiz"></activity>
+        <activity android:name=".Quiz" />
+        <activity android:name=".QuizResults"></activity>
     </application>
 
 </manifest>

@@ -106,7 +106,7 @@
 
     <TextView
         android:id="@+id/questionBox"
-        android:layout_width="368"
+        android:layout_width="368dp"
         android:layout_height="115dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
