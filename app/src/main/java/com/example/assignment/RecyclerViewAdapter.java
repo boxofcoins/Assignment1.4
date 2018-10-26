@@ -2,6 +2,7 @@ package com.example.assignment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
@@ -21,6 +22,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
+    //purpose of this class is to populate all activities needing to display list data with an image and name - i followed a youtube tutorial in order to complete this class
+
     private static final String TAG = "RecyclerViewAdapter";
 
     private ArrayList<String> mImageNames = new ArrayList<>();
@@ -32,7 +35,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         mImages = images;
         mContext = context;
     }
-
 
 
     @Override
@@ -56,24 +58,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         @Override
         public void onClick(View view) {
 
-
-
-
             Log.d(TAG, "onClick: clicked on: " +mImageNames.get(position));
             Log.d(TAG, "onClick: clicked on: " +mImageNames.size());
 
+
+// list of all potential recycler view outcomes - these are launched with intents to their respective classes
 switch  (mImageNames.get(position)){
 
-    case "Introduction":
-        Intent Introduction = new Intent(mContext, Introduction.class );
-        mContext.startActivity(Introduction);
 
-        break;
     case "Roles":
         Intent Roles = new Intent(mContext, Roles.class );
         mContext.startActivity(Roles);
         break;
-    case "Ceremomnies":
+    case "Ceremonies":
         Intent Ceremonies = new Intent(mContext, Ceremonies.class );
         mContext.startActivity(Ceremonies);
         break;
@@ -81,6 +78,27 @@ switch  (mImageNames.get(position)){
         Intent Artifacts = new Intent(mContext, Artifacts.class );
         mContext.startActivity(Artifacts);
         break;
+    case "Alternatives":
+        Intent Alternatives = new Intent(mContext, Alternatives.class );
+        mContext.startActivity(Alternatives);
+        break;
+    case "Roles Video":
+        Intent RolesVideo = new Intent(mContext, RolesVideo.class );
+        mContext.startActivity(RolesVideo);
+        break;
+    case "Ceremonies Video":
+        Intent CeremoniesVideo = new Intent(mContext, CeremoniesVideo.class );
+        mContext.startActivity(CeremoniesVideo);
+        break;
+    case "Artifacts Video":
+        Intent ArtifactsVideo = new Intent(mContext, ArtifactsVideo.class );
+        mContext.startActivity(ArtifactsVideo);
+        break;
+    case "Alternatives Video":
+        Intent AlternativesVideo = new Intent(mContext, AlternativesVideo.class );
+        mContext.startActivity(AlternativesVideo);
+        break;
+
 }
 
 

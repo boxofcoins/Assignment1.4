@@ -27,10 +27,6 @@
             android:label="@string/title_activity_summary"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Introduction"
-            android:label="@string/title_activity_introduction"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Roles"
             android:label="@string/title_activity_roles"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -43,7 +39,18 @@
             android:label="@string/title_activity_artifacts"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Quiz" />
-        <activity android:name=".QuizResults"></activity>
+        <activity android:name=".QuizResults" />
+        <activity android:name=".VideoLectures" />
+        <activity android:name=".VideoList" />
+        <activity android:name=".RolesVideo" />
+        <activity android:name=".ArtifactsVideo" />
+        <activity android:name=".AlternativesVideo" />
+        <activity android:name=".CeremoniesVideo" />
+
+        <activity
+            android:name=".Alternatives"
+            android:label="@string/title_activity_alternatives"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

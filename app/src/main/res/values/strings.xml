@@ -9,95 +9,19 @@
     <string name="startButton">Learn About Agile</string>
     <string name="agileheading">Agile Framework</string>
     <string name="title_activity_summary">Summary</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
+    <string name="roles_text">
+    "There are several roles, which have different names depending on the methodology being followed, common to agile teams. Roles are not positions, any given person takes on one or more roles and can switch roles over time, and any given role may have zero or more people in it at any given point in a project. Usually a scrum consists of 5-11 people.\n\nThe common agile roles are:\n\nTeam lead.\nThis role, called “Scrum Master” in Scrum or team coach or project lead in other methods, is responsible for facilitating the team, obtaining resources for it, and protecting it from problems. This role encompasses the soft skills of project management but not the technical ones such as planning and scheduling, activities which are better left to the team as a whole.\n\nTeam member.\nThis role, sometimes referred to as developer or programmer, is responsible for the creation and delivery of a system. This includes modeling, programming, testing, and release activities, as well as others.\n\nStakeholder.\nA stakeholder is anyone who is a direct user, indirect user, manager of users, senior manager, operations staff member, the "gold owner" who funds the project, support (help desk) staff member, auditors, your program/portfolio manager, developers working on other systems that integrate or interact with the one under development, or maintenance professionals potentially affected by the development and/or deployment of a software project.\n\nTechnical experts.\nSometimes the team needs the help of technical experts, such as build masters to set up their build scripts or an agile DBA to help design and test their database. Technical experts are brought in on an as-needed, temporary basis, to help the team overcome a difficult problem and to transfer their skills to one or more developers on the team.\n\nDomain experts.\nThe product owner represents a wide range of stakeholders, not just end users, and in practice it isn't reasonable to expect them to be experts at every single nuance in your domain. As a result the product owner will sometimes bring in domain experts to work with the team, perhaps a tax expert to explain the details of a requirement or the sponsoring executive to explain the vision for the project.\n\nIndependent tester.\nEffective agile teams often have an independent test team working in parallel that validates their work throughout the lifecycle. This is an optional role, typically adopted only on very complex projects (or at scale)."
     </string>
+    <string name="artifacts_text">
+   "Project progress needs to be transparent and measurable. Agile project teams often use six main artifacts, or deliverables, to develop products and track progress, as listed here:\nProduct vision statement: An elevator pitch, or a quick summary, to communicate how your product supports the company’s or organization’s strategies. The vision statement must articulate the goals for the product.\nProduct roadmap: The product roadmap is a high-level view of the product requirements needed to achieve the product vision. It also enables a project team to outline a general timeframe for when you will develop and release those requirements. The product roadmap is a first cut and high-level view of the product backlog.\nProduct backlog: The full list of what is in the scope for your project, ordered by priority. After you have your first requirement, you have a product backlog.\nRelease plan: A high-level timetable for the release of working software.\nSprint backlog: The goal, user stories, and tasks associated with the current sprint.\nIncrement: The working product functionality, demonstrated to stakeholders at the end of the sprint, which is potentially shippable to the customer."
+      </string>
+    <string name="ceremonies_text">
+    "Sprint Planning\nAttendees: development team, scrum master, product owner\nWhen: At the beginning of a sprint.\nDuration: Usually an hour per week of iteration–e.g. a two-week sprint kicks off with a two-hour planning meeting\nAgile Framework: Scrum. (Kanban teams also plan, of course, but they are not on a fixed iteration schedule with formal sprint planning\nPurpose: Sprint planning sets up the entire team for success throughout the sprint. Coming into the meeting, the product owner will have a prioritized product backlog. They discuss each item with the development team, and the group collectively estimates the effort involved. The development team will then make a sprint forecast outlining how much work the team can complete from the product backlog. That body of work then becomes the sprint backlog.\n\nDaily Stand-up\nAttendees: development team, scrum master, product owner\nWhen: Once per day, typically in the morning.\nDuration: No more than 15 minutes. Don't book a conference room and conduct the stand up sitting down. Standing up helps keep the meeting short!\nAgile Framework: Scrum and Kanban.\nPurpose: Stand-up is designed to quickly inform everyone of what's going on across the team. It's not a detailed status meeting. The tone should be light and fun, but informative. Have each team member answer the following questions:\nWhat did I complete yesterday?What will I work on today?Am I blocked by anything?\n\nIteration review\nAttendees:\nRequired: development team, scrum master, product owner\nOptional: project stakeholders\nWhen: At the end of a sprint or milestone.\nDuration: 30-60 minutes.\nAgile Framework: Scrum and kanban. Like planning, review for kanban teams should be aligned with team milestones rather than on a fixed cadence.\nPurpose: Iteration review is a time to showcase the work of the team. They can be in a casual format like "demo Fridays", or in a more formal meeting structure. This is the time for the team to celebrate their accomplishments, demonstrate work finished within the iteration, and get immediate feedback from project stakeholders. Remember, work should be fully demonstrable and meet the team's quality bar to be considered complete and ready to showcase in the review.\n\nRetrospective\nAttendees: development team, scrum master, product owner\nWhen: At the end of an iteration.\nDuration: 60 minutes.\nAgile Framework: Scrum and Kanban. Scrum teams do sprint retrospective based on a fixed cadence. Kanban teams can benefit from occasional retrospectives, too.\nPurpose: Agile is about getting rapid feedback to make the product and development culture better. Retrospectives help the team understand what worked well–and what didn't.\nRetrospectives aren't just a time for complaints without action. Use retrospectives to find out what's working so the team can continue to focus on those areas. Also, find out what's not working and use the time to find creative solutions and develop an action plan. Continuous improvement is what sustains and drives development within an agile team, and retrospectives are a key part of that.\n"
+    </string>
+    <string name="alternatives_text">
+    "Waterfall\nThe Waterfall Model was the first Process Model to be introduced. It is also referred to as a linear-sequential life cycle model. It is very simple to understand and use. In a waterfall model, each phase must be completed before the next phase can begin and there is no overlapping in the phases. The Waterfall model is the earliest SDLC approach that was used for software development. The waterfall Model illustrates the software development process in a linear sequential flow. This means that any phase in the development process begins only if the previous phase is complete. In this waterfall model, the phases do not overlap.\n\nLean Startup\nLean startup is a methodology for developing businesses and products, which aims to shorten product development cycles and rapidly discover if a proposed business model is viable; this is achieved by adopting a combination of business-hypothesis-driven experimentation, iterative product releases, and validated learning. Central to the lean startup methodology is the assumption that when startup companies invest their time into iteratively building products or services to meet the needs of early customers, the company can reduce market risks and sidestep the need for large amounts of initial project funding and expensive product launches and failures.\nExtreme Programming\n\nExtreme Programming (XP) is an agile software development framework that aims to produce higher quality software, and higher quality of life for the development team. XP is the most specific of the agile frameworks regarding appropriate engineering practices for software development."
+    </string>
+
     <string name="title_activity_introduction" translatable="false">Introduction</string>
     <string name="title_activity_roles">Roles</string>
     <string name="title_activity_ceremonies">Ceremonies</string>
@@ -106,5 +30,6 @@
     <string name="video">Video Lectures</string>
     <string name="course">INFS2603</string>
     <string name="learning">Learning Tool</string>
+    <string name = "title_activity_alternatives">Alternatives</string>
 
 </resources>

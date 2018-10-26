@@ -8,11 +8,11 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
-public class Home extends AppCompatActivity {
 
+//this classes uses the recyler view adapter in order to put the list of videos available into a view
+public class VideoList extends AppCompatActivity {
 
-    private static final String TAG = "Home";
-
+    private static final String TAG = "VideoList";
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
 
@@ -27,16 +27,16 @@ public class Home extends AppCompatActivity {
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
         mImageUrls.add("https://www.britishjudo.org.uk/wp-content/uploads/2016/05/Customers-1210x523.png");
-        mNames.add("Roles");
+        mNames.add("Roles Video");
 
         mImageUrls.add("https://image.freepik.com/free-icon/text-document_318-48568.jpg");
-        mNames.add("Artifacts");
+        mNames.add("Artifacts Video");
 
         mImageUrls.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcZs7haU4tmHNwv38FoeZW0-uWuDjm77xZ7UHmTNUwbCSi2ZH_");
-        mNames.add("Ceremonies");
+        mNames.add("Ceremonies Video");
 
         mImageUrls.add("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/768px-Icon-round-Question_mark.svg.png");
-        mNames.add("Alternatives");
+        mNames.add("Alternatives Video");
 
 
         initRecyclerView();
