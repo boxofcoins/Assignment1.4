@@ -39,7 +39,7 @@ public class ArtifactsVideo extends YouTubeBaseActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                youTubePlayerView.initialize(YoutubeConfig.getApiKey(),onInitializedListener);
+            youTubePlayerView.initialize(YoutubeConfig.getApiKey(),onInitializedListener);
 
             }
         });

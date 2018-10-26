@@ -9,7 +9,8 @@ import android.util.Log;
 import java.util.ArrayList;
 
 
-//this classes uses the recyler view adapter in order to put the list of videos available into a view
+//this classes uses the recylcer view adapter in order to put the list of videos available into a view - this recycler view is also used by the "home" class
+
 public class VideoList extends AppCompatActivity {
 
     private static final String TAG = "VideoList";
@@ -22,6 +23,8 @@ public class VideoList extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         initImageBitmaps();
     }
+
+    //adds the name and url of the image to be added to the thumbnail
 
     private void initImageBitmaps(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
@@ -42,6 +45,7 @@ public class VideoList extends AppCompatActivity {
         initRecyclerView();
     }
 
+    //initiate the recycler view
     private void initRecyclerView(){
         Log.d(TAG, "initRecyclerView: init recyclerview.");
         RecyclerView recyclerView = findViewById(R.id.recycler_view);

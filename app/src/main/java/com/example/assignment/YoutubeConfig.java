@@ -2,6 +2,8 @@ package com.example.assignment;
 
 public class YoutubeConfig {
 
+    //contains youtube API and getter method
+
     public YoutubeConfig() {
 
     }

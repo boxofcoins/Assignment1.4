@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-//this class returns the score by getting the extra data from the Quiz Class through an intent
+
+
+//this class returns the score by getting the extra data from the Quiz Class through an intent - this also contains a retry button to attempt the quiz again
 public class QuizResults extends AppCompatActivity {
 
 TextView scoreResult;

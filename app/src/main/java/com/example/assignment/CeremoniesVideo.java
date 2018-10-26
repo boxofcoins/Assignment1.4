@@ -11,9 +11,11 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class CeremoniesVideo extends YouTubeBaseActivity {
 
+    //integration of youtube API for specific course-related videos to be played
     YouTubePlayerView youTubePlayerView;
     Button playBtn;
     YouTubePlayer.OnInitializedListener onInitializedListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,15 +24,13 @@ public class CeremoniesVideo extends YouTubeBaseActivity {
         playBtn = findViewById(R.id.playerButton);
         youTubePlayerView = findViewById(R.id.youtubePlayer);
 
-
-
         onInitializedListener = new YouTubePlayer.OnInitializedListener() {
+
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-
-
-                youTubePlayer.loadVideo("29dnS7XGgqs");
+            youTubePlayer.loadVideo("29dnS7XGgqs");
             }
+
 
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
@@ -41,7 +41,7 @@ public class CeremoniesVideo extends YouTubeBaseActivity {
         playBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                youTubePlayerView.initialize(YoutubeConfig.getApiKey(),onInitializedListener);
+            youTubePlayerView.initialize(YoutubeConfig.getApiKey(),onInitializedListener);
 
             }
         });

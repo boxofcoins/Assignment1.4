@@ -14,11 +14,13 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 import org.w3c.dom.Text;
 
+//integration of youtube API for specific course-related videos to be played
 public class RolesVideo extends YouTubeBaseActivity {
 
     YouTubePlayerView youTubePlayerView;
     Button playBtn;
     YouTubePlayer.OnInitializedListener onInitializedListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +35,7 @@ public class RolesVideo extends YouTubeBaseActivity {
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
 
 
-youTubePlayer.loadVideo("kmRfBl3p6PA");
+            youTubePlayer.loadVideo("kmRfBl3p6PA");
             }
 
             @Override
@@ -43,11 +45,11 @@ youTubePlayer.loadVideo("kmRfBl3p6PA");
         };
 
         playBtn.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
+         @Override
+        public void onClick(View view) {
         youTubePlayerView.initialize(YoutubeConfig.getApiKey(),onInitializedListener);
 
-    }
-});
+        }
+         });
     }
 }
